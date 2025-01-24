@@ -5,8 +5,8 @@ const popupElem = document.querySelector('.popup-cont')
 const main = document.querySelector('main')
 const snowFallAnimation = document.querySelector('.snow-ball-container')
 let audio = new Audio
-audio.src = `/audios/perfect song.unknown`
-audio.preload = 'auto'
+//audio.src = `/audios/perfect song.unknown`
+//audio.preload = 'auto'
 
 btn.addEventListener('click' , ()=>{
     flameWrapper.classList.add('hidden')
@@ -20,7 +20,7 @@ btn.addEventListener('click' , ()=>{
         },100)
     },700)
     setTimeout(()=>{
-            audio.play()
+       //     audio.play()
             snowFallAnimation.innerHTML = `   <div class="snow-ball"></div>
       <div class="snow-ball"></div>
       <div class="snow-ball"></div>
