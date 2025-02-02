@@ -4,6 +4,7 @@ const containerElem = document.querySelector('.container')
 const popupElem = document.querySelector('.popup-cont')
 const main = document.querySelector('main')
 const snowFallAnimation = document.querySelector('.snow-ball-container')
+const birthDayImg = document.querySelector('.popup-img > img')
 let audio = new Audio
 //audio.src = `/audios/perfect song.unknown`
 //audio.preload = 'auto'
@@ -44,3 +45,4 @@ const receiverName = document.querySelector("#receiver");
 const senderName = document.querySelector("#sender");
 receiverName.innerText = new URLSearchParams(location.search).get("receiver");
 senderName.innerText = new URLSearchParams(location.search).get("sender") || 'Aditya kumar';
+birthDayImg.src = new URLSearchParams(location.search).get('img') || 'https://tse3.mm.bing.net/th?id=OIP.aKMJXpIzxjJV1EYwCOWzNQHaHa&pid=Api&P=0&h=180'
