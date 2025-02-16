@@ -303,7 +303,7 @@ main{
   border-radius: 4px;
    height: 100%;
    width: 100%;
-   object-fit: contain;
+   object-fit: cover;
  }
  .message-cont{
   font-size: 24px;
