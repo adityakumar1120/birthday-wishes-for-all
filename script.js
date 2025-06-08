@@ -43,6 +43,12 @@ btn.addEventListener('click' , ()=>{
 
 const receiverName = document.querySelector("#receiver");
 const senderName = document.querySelector("#sender");
+isGradient = JSON.parse(new URLSearchParams(location.search).get('isgradient'))
+if(isGradient){
+receiverName.style.webkitBackgroundClip = "text";
+receiverName.style.webkitTextFillColor = "transparent";
+receiverName.style.backgroundImage = `linear-gradient(135deg, #00dbde 10%, #fc00ff 100%)`;
+}
 receiverName.innerText = new URLSearchParams(location.search).get("receiver");
 senderName.innerText = new URLSearchParams(location.search).get("sender") || 'Aditya kumar';
-birthDayImg.src = new URLSearchParams(location.search).get('img') || 'https://tse3.mm.bing.net/th?id=OIP.aKMJXpIzxjJV1EYwCOWzNQHaHa&pid=Api&P=0&h=180'
+birthDayImg.src = new URLSearchParams(location.search).get('img') || 'https://i.pinimg.com/736x/f0/84/e7/f084e74fe8fa8f1ce92b9caf4ea06b0e.jpg'

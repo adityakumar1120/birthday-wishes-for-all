@@ -87,14 +87,11 @@ main{
 .name-cont h1{
     font-family: "Playwrite IN", serif;
     font-weight: 600;
-    color: #00000000;
-   background-image: linear-gradient(135deg, #00dbde 10%, #fc00ff 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-   
+   /* background-image: linear-gradient(135deg, #00dbde 10%, #fc00ff 100%); */
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
 }
 .up-anime h1{
-  /* align-self: flex-start; */
   font-size: 2.5rem;
 
 }
@@ -102,7 +99,6 @@ main{
     height: 100px;
     overflow: hidden;
     padding-inline: 12px;
-    /* width: max-content; */
 }
 .bday-anime{
     animation: up-animation .9s ease-out ;
